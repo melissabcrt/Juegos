@@ -8,7 +8,7 @@
     tools:context=".juego">
 
     <ImageView
-        android:id="@+id/iMario"
+        android:id="@+id/ivFoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:srcCompat="@drawable/mario"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/nombre"
+        android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nombre_del_juego"
@@ -27,21 +27,21 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#673AB7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iMario"
-        app:layout_constraintTop_toTopOf="@id/iMario" />
+        app:layout_constraintStart_toEndOf="@id/ivFoto"
+        app:layout_constraintTop_toTopOf="@id/ivFoto" />
 
         <TextView
-        android:id="@+id/consola"
+        android:id="@+id/tvConsola"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/consola"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        app:layout_constraintStart_toEndOf="@id/iMario"
-        app:layout_constraintTop_toBottomOf="@id/nombre"/>
+        app:layout_constraintStart_toEndOf="@id/ivFoto"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre"/>
 
     <TextView
-        android:id="@+id/precio"
+        android:id="@+id/tvPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -49,7 +49,7 @@
         android:text="@string/_130_00_mxn"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombre" />
+        app:layout_constraintTop_toBottomOf="@id/tvNombre" />
 
     <Button
         android:id="@+id/bnComprar"
@@ -59,7 +59,7 @@
         android:layout_marginEnd="30dp"
         android:text="@string/comprar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precio" />
+        app:layout_constraintTop_toBottomOf="@id/tvPrecio" />
 
 
 
